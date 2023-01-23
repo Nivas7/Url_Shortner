@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#">
+  <title>Url-Shortner</title>
+</head>
+<body>
+  <header>
+    <h1>
+      Short urls for your resources
+    </h1>
+  </header>
+  <main id="app">
+    <form @submit.prevent="createUrl()">
+      <label for="url">Url</label>
+      <input v-model="url" name="url" id="url">
+      <label for="slug">Slug</label>
+      <input v-model="slug" name="slug" id="slug">
+      <button id="btn" type="submit">Create</button>
+    </form>
+
+    <div class="cg">
+      
+    </div>
+
+  </main>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.cjs.js"></script> -->
+  <script src="app.js"></script>
+</body>
+</html>
